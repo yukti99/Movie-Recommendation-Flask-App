@@ -1,0 +1,109 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+* { 
+	-webkit-box-sizing:border-box; 
+	-moz-box-sizing:border-box; 
+	-ms-box-sizing:border-box; 
+	-o-box-sizing:border-box; 
+	box-sizing:border-box; 
+}
+
+html { 
+	width: 100%; 
+	height:100%; 	
+}
+
+body { 
+	overflow-y:auto; 
+	overflow-x: hidden;
+	background-image: url( movies.jpg);
+	width: 100%;
+	height:100%;
+	font-family: 'Open Sans', sans-serif;	
+	color: #fff;
+	font-size: 20px;
+	text-align:center;
+	letter-spacing:1.2px;
+}
+body::-webkit-scrollbar{
+    width:0;
+}
+
+.login { 
+	width:300px;
+	height:300px;
+	margin-left:600px;
+}
+
+.header{
+	font-size: 40px;
+	font-family: cursive;
+	color:#e6e6e6;
+	font-weight: 800;
+	text-align: center;
+	
+}
+
+.container{
+	margin-top: 60px;
+	margin-bottom: 60px;
+	padding:40px;
+	background: rgba(0,0,0,0.7);
+	height:fit-content;
+	width:fit-content;
+	border-radius: 15px;
+}
+
+input { 
+	width: 100%;
+	margin-top:20px; 	
+	background: rgba(255,255,255,0.6);
+	border: none;
+	outline: none;
+	padding: 10px;
+	font-size: 17px;
+	color: #333333;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+	border: 1px solid rgba(0,0,0,0.3);
+	border-radius: 4px;
+	box-shadow: inset 0 -5px 45px rgba(100,100,100,0.2), 0 1px 1px rgba(255,255,255,0.2);
+	-webkit-transition: box-shadow .5s ease;
+	-moz-transition: box-shadow .5s ease;
+	-o-transition: box-shadow .5s ease;
+	-ms-transition: box-shadow .5s ease;
+	transition: box-shadow .5s ease;
+}
+
+input:focus { 
+	box-shadow: inset 0 -5px 45px rgba(100,100,100,0.4), 0 1px 1px rgba(255,255,255,0.2);
+}
+
+
+.submit_btn{
+	background-color: #4a77d4 ;
+	border-radius: 10px;
+	width:100%;
+	margin-top: 30px;
+	font-size: 17px;
+	padding:10px;	
+	color: black;
+	border-color: black;
+	font-weight: bold;
+}
+.submit_btn:hover, .btn:active, .btn.active, .btn.disabled, .btn[disabled] { 
+	background-color:#B3A1F0;	
+
+}
+
+.submit_btn:hover { 
+	color: #333333;	
+	text-decoration: none; 
+	background-color: #e6e6e6; 
+	background-position: 0 -15px; 
+	-webkit-transition: background-position 0.1s linear;
+	-moz-transition: background-position 0.1s linear;
+	-ms-transition: background-position 0.1s linear;
+	-o-transition: background-position 0.1s linear; 
+	transition: background-position 0.1s linear; 
+}
+

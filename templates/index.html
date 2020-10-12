@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>ML API</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+    integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk="
+    crossorigin="anonymous" 
+    />
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    
+</head>
+
+<body>
+ <div class="login">
+   <div class="container">
+	<div class=header>Movie Recommendation</div>
+     <!-- Main Input For Receiving Query to ML -->
+    <form action="{{ url_for('recommend')}}"method="post">
+    	<input type="text" name="movie" placeholder="movie" required="required" />
+      <input type="text" name="rating" placeholder="rating" required="required" />
+     <button type="submit" class="submit_btn">Recommend</button>
+     
+    </form>
+  
+
+   <br>
+   <br>
+   {% for each in recommended_movie %}      
+   <h4>
+    {{ each }}
+  </h4> 
+    {% endfor %}
+  </div>
+ </div>
+
+
+</body>
+</html>
